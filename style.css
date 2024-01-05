@@ -6,7 +6,7 @@
  *  Gris oscuro: #1A1919
  *  Negro: #0D0D0D
  *  Naranja claro: #FF7733
- *  Naranja: FF5500
+ *  Naranja: #FF5500
  *  Naranja oscuro: #B23C00
 */
 
@@ -16,8 +16,8 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #FFFFFF;
+    color: #0D0D0D;
     font-family: "Urbanist";
-    color: black;
     margin: 0;
 }
 
@@ -48,18 +48,22 @@ nav {
 }
 
 .header-image {
-    background-color: #999999;
     display: grid;
     place-items: center;
     flex-grow: 1;
     height: 75%;
 }
 
+.header-image img {
+    width: 56px;
+}
+
 .header-description {
-    background-color: #999999;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 32px;
     color: transparent;
-    display: grid;
-    place-items: center;
     flex-grow: 5;
     margin-left: 5px;
     margin-right: 5px;
@@ -67,26 +71,19 @@ nav {
 }
 
 .header-hamburguer-menu {
-    background-color: #999999;
     display: grid;
     place-items: center;
     flex-grow: 1;
     height: 75%;
 }
 
+.header-hamburguer-menu img {
+    width: 44px;
+}
+
 /* MAIN */
 .main {
-    /* background-color: #854F6C; */
     width: 100%;
-}
-
-h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-p {
-    font-size: 20px;
 }
 
 /* BOX 1 */
@@ -99,44 +96,57 @@ p {
 
 .article-1 {
     background-color: #F2F2F2;
+    background-image: url(./images/iphone_background.svg);
+    background-size: 90%;
+    background-position: bottom;
+    background-repeat: no-repeat;
     border-radius: 15px;
-    display: grid;
-    place-items: center;
     width: 100%;
     height: 433px;
     margin-bottom: 24px;
 }
 
+.article-1 h1 {
+    margin: 32px 32px 12px 32px;
+    font-size: 32px;
+}
+
+.article-1 p {
+    color: #0D0D0D;
+    margin: 0 32px 0 32px;
+    font-size: 20px;
+}
+
 .article-2 {
     width: 100%;
-    height: 433px;
+    height: 342px;
 }
 
 .gif {
-    background-color: #F2F2F2;
     border-radius: 15px;
     display: grid;
     place-items: center;
-    height: 100%;
+    height: 342px;
 }
 
 .scroll {
     display: none;
-    /* background-color: #F2F2F2;
-    visibility: hidden; */
 }
 
 /* BOX 2 */
 .box-2 {
-    background-color: #F2F2F2;
+    background-image: url(./images/video.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: auto;
     height: 483px;
-    margin: 0 24px 24px 24px;
-    padding: 40px;
+    margin: 0 24px 120px 24px;
+    padding: 32px;
 }
 
 .boxes-arriba {
@@ -146,17 +156,18 @@ p {
 
 .boxes-arriba-unidad {
     background-color: #FF7733;
-    border-radius: 15px;
+    border-radius: 8px;
     display: grid;
     place-items: center;
     width: fit-content;
     height: 65px;
     padding: 0 10px 0 10px;
-    margin-right: 10px;
+    gap: 10px;
 }
 
 div .color-diferente {
-    background-color: #999999;
+    font-size: 16px;
+    background-color: #9999998a;
 }
 
 .arriba-hidde {
@@ -166,17 +177,16 @@ div .color-diferente {
 .boxes-abajo {
     display: flex;
     justify-content: space-between;
+    color: #FFFFFF;
+    font-size: 35px;
     width: 100%;
 }
 
 .boxes-abajo-unidad {
-    background-color: #FF7733;
     border-radius: 15px;
     display: grid;
     place-items: center;
     width: fit-content;
-    height: 65px;
-    margin-right: 10px;
     padding: 0 10px 0 10px;
 }
 
@@ -189,37 +199,168 @@ div .color-diferente {
     justify-content: center;
     width: auto;
     margin: 0 24px 0 24px;
-    padding: 0 48px 0 48px;
 }
 
 .box-3 h1 {
-    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* margin-bottom: 40px; */
+}
+
+.box-3 p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 120px;
+}
+
+/* SPACE */
+.space {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.space div {
+    background-color: #999999;
+    width: 159px;
+    height: 1.15px;
 }
 
 /* BOX 4 */
 .box-4 {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin: 0 24px 0 24px;
+    /* text-align: center;
+    justify-content: center; */
+    margin: 0 24px 120px 24px;
     padding: 0;
+}
+
+.box-4 h1 {
+    align-self: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 0 40px 0;
 }
 
 .procesos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 24px;
 }
 
 .proceso-box {
-    display: grid;
-    place-items: center;
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 340px;
-    height: 300px;
+    width: 342px;
+    height: 340px;
+}
+
+.proceso-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(./images/search.svg);
+    background-size: 72px;
+    background-repeat: no-repeat;
+    background-position-x: 32px;
+    background-position-y: 32px;
+}
+
+.proceso-1 h1 {
+    align-self: flex-start;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0 32px;
+    margin: 0 0 32px 0;
+}
+
+.proceso-1 p {
+    font-size: 20px;
+    padding: 0 32px;
+    font-weight: 400;
+    margin: 0 0 32px 0;
+}
+
+.proceso-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(./images/judge.svg);
+    background-size: 72px;
+    background-repeat: no-repeat;
+    background-position-x: 32px;
+    background-position-y: 32px;
+}
+
+.proceso-2 h1 {
+    align-self: flex-start;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0 32px;
+    margin: 0 0 32px 0;
+}
+
+.proceso-2 p {
+    font-size: 20px;
+    padding: 0 32px;
+    font-weight: 400;
+    margin: 0 0 32px 0;
+}
+
+.proceso-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(./images/status-up.svg);
+    background-size: 72px;
+    background-repeat: no-repeat;
+    background-position-x: 32px;
+    background-position-y: 32px;
+}
+
+.proceso-3 h1 {
+    align-self: flex-start;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0 32px;
+    margin: 0 0 32px 0;
+}
+
+.proceso-3 p {
+    font-size: 20px;
+    padding: 0 32px;
+    font-weight: 400;
+    margin: 0 0 32px 0;
+}
+
+.proceso-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(./images/tick-circle.svg);
+    background-size: 72px;
+    background-repeat: no-repeat;
+    background-position-x: 32px;
+    background-position-y: 32px;
+}
+
+.proceso-4 h1 {
+    align-self: flex-start;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0 32px;
+    margin: 0 0 32px 0;
+}
+
+.proceso-4 p {
+    font-size: 20px;
+    padding: 0 32px;
+    font-weight: 400;
+    margin: 0 0 32px 0;
 }
 
 /* BOX 5 */
@@ -228,27 +369,52 @@ div .color-diferente {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 0 24px 200px 24px;
+    margin: 0 24px 80px 24px;
 }
 
 .box-5 h1 {
     align-self: center;
-    max-width: 1000px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 80px 0;
+}
+
+/* SPACE */
+.space-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.space-2 div {
+    background-color: #FF5500;
+    width: 64px;
+    height: 10px;
 }
 
 .servicos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
 }
 
 .servicos-box {
-    background-color: #F2F2F2;
     display: grid;
     place-items: center;
-    width: 400px;
-    height: 350px;
+    width: 342px;
+    height: 228px;
+    margin-bottom: 40px;
+}
+
+.servicos-box h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 40px 0 40px 0;
+}
+
+.servicos-box p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
 }
 
 /* BOX-6 */
@@ -257,7 +423,7 @@ div .color-diferente {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin: 0 24px 24px 24px;
+    margin: 0 24px 0px 24px;
 }
 
 .clientes {
@@ -265,8 +431,9 @@ div .color-diferente {
     border-radius: 15px;
     display: grid;
     place-items: center;
-    width: 350px;
-    height: 400px;
+    width: 342px;
+    height: 354px;
+    margin-bottom: 24px;
 }
 
 /* BOX 7 */
@@ -398,7 +565,7 @@ button {
 }
 
 /* OTHER DIMENSIONS */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
     h1 {
         font-size: 64px;
@@ -414,28 +581,19 @@ button {
     }
 
     .header-description {
-        /* background-color: #522B5B; */
-        color: black;
-        /* display: grid;
-        place-items: center;
-        flex-grow: 5;
-        margin-left: 5px;
-        margin-right: 5px;
-        height: 75%; */
+        color: #FF5500;
+    }
+
+    .header-description p {
+        border-left: 1px solid #FF5500;
+        padding-left: 24px;
     }
 
     .box-1 {
-        /* display: flex; */
         flex-direction: row;
-        /* width: auto;
-        margin: 0 24px 24px 24px; */
     }
 
     .article-1 {
-        /* background-color: #F2F2F2; */
-        /* border-radius: 15px;
-        display: grid;
-        place-items: center; */
         width: 60%;
         height: 800px;
         margin-right: 24px;
@@ -448,10 +606,6 @@ button {
     }
 
     .gif {
-        /* background-color: #F2F2F2;
-        border-radius: 15px;
-        display: grid;
-        place-items: center; */
         height: 592px;
         margin-bottom: 24px;
     }
@@ -466,19 +620,10 @@ button {
     }
 
     .box-2 {
-        /* background-color: #F2F2F2;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: auto; */
         height: 944px;
-        /* margin: 0 24px 0 24px;
-        padding: 40px; */
     }
 
     .boxes-arriba {
-        /* display: flex; */
         width: 50%;
     }
 
@@ -497,11 +642,6 @@ button {
         visibility: visible;
     }
 
-    /* .boxes-abajo {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    } */
 
     .boxes-abajo-unidad {
         background-color: #FF7733;
@@ -514,4 +654,4 @@ button {
         padding: 0 10px 0 10px;
     }
 
-}
+} */
