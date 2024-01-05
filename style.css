@@ -214,6 +214,8 @@ div .color-diferente {
 }
 
 .proceso-box {
+    display: grid;
+    place-items: center;
     background-color: #F2F2F2;
     border-radius: 15px;
     width: 340px;
@@ -243,6 +245,8 @@ div .color-diferente {
 
 .servicos-box {
     background-color: #F2F2F2;
+    display: grid;
+    place-items: center;
     width: 400px;
     height: 350px;
 }
@@ -259,6 +263,8 @@ div .color-diferente {
 .clientes {
     background-color: #F2F2F2;
     border-radius: 15px;
+    display: grid;
+    place-items: center;
     width: 350px;
     height: 400px;
 }
@@ -278,6 +284,8 @@ div .color-diferente {
 }
 
 .equipe-box {
+    display: grid;
+    place-items: center;
     background-color: #F2F2F2;
     border: 1px solid #999999;
     width: 378px;
