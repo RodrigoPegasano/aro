@@ -422,18 +422,110 @@ div .color-diferente {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin: 0 24px 0px 24px;
+    margin: 0 24px 120px 24px;
 }
 
-.clientes {
-    background-color: #F2F2F2;
-    border-radius: 15px;
-    display: grid;
-    place-items: center;
+.cliente-1 {
+    border-radius: 16px;
     width: 342px;
     height: 354px;
     margin-bottom: 24px;
+    padding: 0 32px;
+    background-color: #FF5500;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-image: url(./images/arrow-right.svg);
+    background-size: 72px;
+    background-repeat: no-repeat;
+    background-position-x: 32px;
+    background-position-y: 250px;
+}
+
+.cliente-1 h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 32px 0 0 0;
+}
+
+.cliente-2 {
+    border-radius: 16px;
+    width: 342px;
+    height: 470px;
+    margin-bottom: 24px;
+    padding: 0 32px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(./images/apple.svg);
+    background-size: 72px;
+    background-repeat: no-repeat;
+    background-position-x: 32px;
+    background-position-y: 32px;
+}
+
+.cliente-2 h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 32px 0;
+}
+
+.cliente-2 p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 64px 0;
+}
+
+.cliente-2 a {
+    color: #FF5500;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 32px 0;
+    text-decoration: none;
+    width: fit-content;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #FF5500;
+}
+
+.cliente-3 {
+    border-radius: 16px;
+    width: 342px;
+    height: 445px;
+    padding: 0 32px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(./images/nike.svg);
+    background-size: 119px;
+    background-repeat: no-repeat;
+    background-position-x: 32px;
+    background-position-y: 56px;
+}
+
+.cliente-3 h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 32px 0;
+}
+
+.cliente-3 p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 64px 0;
+}
+
+.cliente-3 a {
+    color: #FF5500;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 32px 0;
+    text-decoration: none;
+    width: fit-content;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #FF5500;
 }
 
 /* BOX 7 */
@@ -441,7 +533,13 @@ div .color-diferente {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 0 100px 0;
+    margin: 0 0 120px 0;
+}
+
+.box-7 .nossa-equipe {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 32px 80px 32px;
 }
 
 .equipe {
@@ -451,37 +549,94 @@ div .color-diferente {
 }
 
 .equipe-box {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: row;
     background-color: #F2F2F2;
-    border: 1px solid #999999;
-    width: 378px;
-    height: 400px;
+    width: 390px;
+    height: 328px;
+}
+
+.equipe-box div {
+    width: 100%;
+}
+
+.info-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    background-color: #0D0D0D;
+    padding: 0 24px;
+}
+
+.info-1 h1 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    color: #FF5500;
+    margin: 0 0 16px 0;
+}
+
+.info-1 h2 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+}
+
+.info-1 p {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0 0 24px 0;
 }
 
 /* BLOG */
 .blog {
     background-color: #0D0D0D;
-    border-radius: 15px;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 24px 100px 24px;
-    padding: 24px 36px;
+    width: 342px;
+    height: 424px;
+    margin: 0 24px 120px 24px;
 }
 
-.blog h1 {
+.title-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 32px 32px 0 32px;
+}
+
+.title-link h1 {
     color: #FF5500;
-    width: auto;
+    font-size: 32px;
     padding: 0;
-    margin: 0 0 24px 0;
+    margin: 0 0 48px 0;
 }
 
-.blog p {
-    color: #FFFFFF;
-    width: auto;
-    padding: 0;
+.title-link a {
+    width: 24px;
+    height: 24px;
     margin: 0;
+}
+
+.p-blog {
+    color: #FFFFFF;
+    margin: 0 32px;
+}
+
+.p-blog p {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0 0 32px 0;
+
 }
 
 /* VAMOS CONVERSAR */
@@ -490,45 +645,64 @@ div .color-diferente {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    width: 342px;
+    height: 326px;
     margin: 0 24px 24px 24px;
-    padding: 24px 36px;
 }
 
 .vamos-conversar h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
     color: #FFFFFF;
-    width: auto;
+    margin: 32px;
     padding: 0;
-    margin: 0 0 24px 0;
 }
 
 .vamos-conversar p {
+    font-size: 20px;
+    font-weight: 400;
     color: #FFFFFF;
-    width: auto;
-    padding: 0;
-    margin: 0;
+    margin: 0 32px 32px 32px;
 }
 
 /* Formulario */
 form {
     background-color: #F2F2F2;
-    border-radius: 15px;
-    display: grid;
-    place-items: center;
-    width: auto;
-    height: 492px;
-    padding: 0 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 342px;
+    height: 496px;
     margin: 0 24px 24px 24px;
 }
 
 .form-info, .form-submit {
-    width: 100%;
-    max-width: 500px;
+    width: 278px;
+    margin: 0 32px;
 }
 
 .form-info input, .form-info textarea {
     height: 40px;
-    margin-bottom: 20px;
+    /* margin: 0 0 40px 0; */
+}
+
+#name {
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+#email, #email, #mensagem {
+    margin-bottom: 40px;
+}
+
+#conhecer {
+    margin-bottom: 70px;
+}
+
+.form-info input:focus, .form-info textarea:focus {
+    outline: none;
 }
 
 input, textarea {
@@ -539,9 +713,11 @@ input, textarea {
     font-family: "Urbanist";
     border-style: none;
     border-bottom: 1px solid #999999;
+    padding: 0;
 }
 
 .form-submit button {
+    margin: 0 0 32px 0;
     height: 70px;
 }
 
@@ -554,18 +730,117 @@ button {
     width: 100%;
 }
 
+/* CONTATO */
+.box-8 {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    margin: 0 24px 24px 24px;
+}
+
+.telefone h1 {
+    color: #FF5500;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 32px 32px 8px 32px;
+}
+
+.telefone p {
+    color: #FF5500;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 32px 40px 32px;
+}
+
+.email h1 {
+    color: #FF5500;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 32px 8px 32px;
+}
+
+.email p {
+    color: #FF5500;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 32px 40px 32px;
+}
+
+.social {
+    margin: 0 32px 32px 32px;
+}
+
+.social a {
+    margin-right: 24px;
+    text-decoration: none;
+}
+
 /* FOOTER */
 .footer {
     background-color: #FF5500;
-    display: grid;
-    place-items: center;
-    width: auto;
-    height: 100px;
-    margin-top: 24px;
+    width: 100%;
+    height: 305px;
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 39.5px;
+}
+
+.logo-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    margin: 24px 0 40px 0;
+}
+
+.logo-white-footer img {
+    width: 70px;
+    margin: 0;
+}
+
+.copyright {
+    display: flex;
+    margin: 0;
+}
+
+.copyright p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 0 16px;
+}
+
+.datos {
+    align-self: center;
+    text-align: center;
+    margin: 0;
+}
+
+.datos p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    height: 11px;
+    margin: 0;
+    margin: 0 0 40px 0;
+}
+
+.social-footer {
+    align-self: center;
+}
+
+.social-footer a {
+    text-decoration: none;
+    padding: 0;
+    margin-inline: 12px;
 }
 
 /* OTHER DIMENSIONS */
-/* @media (min-width: 768px) {
+/* @media (min-width: 768px) {0
 
     h1 {
         font-size: 64px;
