@@ -77,8 +77,9 @@ nav {
 
 /* BOX 1 */
 .box-1 {
-    width: auto;
-    margin: 24px;
+    width: 342px;
+    height: 800px;
+    margin: 24px auto;
     padding: 0;
 }
 
@@ -88,7 +89,7 @@ nav {
     background-image: url(./images/iphone_background.svg);
     background-position: bottom;
     background-repeat: no-repeat;
-    /* background-size: 310px; */
+    background-size: 310px;
     width: 342px;
     height: 433px;
     margin-left: auto;
@@ -102,7 +103,7 @@ nav {
     font-size: 32px;
     font-weight: 600;
     margin: 0 32px;
-    padding: 32px 0;
+    padding: 32px 0 24px 0;
 }
 
 .article-1 p {
