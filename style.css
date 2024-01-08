@@ -88,7 +88,7 @@ nav {
     background-image: url(./images/iphone_background.svg);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 310px;
+    /* background-size: 310px; */
     width: 342px;
     height: 433px;
     margin-left: auto;
