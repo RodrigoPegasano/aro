@@ -21,7 +21,7 @@ body {
 
 @font-face {
     font-family: "Urbanist";
-    src: url("../Aro/font/Urbanist/static/Urbanist-Regular.ttf");
+    src: url("./font/Urbanist/static/Urbanist-Regular.ttf");
 }
 
 /* HEADER */
@@ -805,59 +805,3 @@ button:hover {
     padding: 0;
     margin-inline: 12px;
 }
-
-/* .box-footer {
-    display: flex;
-    flex-direction: column;
-    margin: 0 39.5px;
-}
-
-.logo-copyright {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px;
-    margin: 24px 0 40px 0;
-}
-
-.logo-white-footer img {
-    width: 70px;
-    margin: 0;
-}
-
-.copyright {
-    display: flex;
-    margin: 0;
-}
-
-.copyright p {
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0 0 0 16px;
-}
-
-.datos {
-    align-self: center;
-    text-align: center;
-    margin: 0;
-}
-
-.datos p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #FFFFFF;
-    height: 11px;
-    margin: 0;
-    margin: 0 0 40px 0;
-}
-
-.social-footer {
-    align-self: center;
-}
-
-.social-footer a {
-    text-decoration: none;
-    padding: 0;
-    margin-inline: 12px;
-} */
