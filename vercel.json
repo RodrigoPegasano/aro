@@ -1,16 +1,16 @@
 {
     "version": 2,
-    "name": "electrosa",
+    "name": "aro",
     "builds": [
         {
-            "src": "index.js",
+            "src": "index.html",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/index.js"
+            "dest": "/index.html"
         }
     ]
 }
